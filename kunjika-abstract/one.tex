@@ -1,5 +1,16 @@
 \documentclass[a4paper,10pt]{report}
 \usepackage[utf8]{inputenc}
+\usepackage[pdftex,colorlinks]{hyperref}
+    \hypersetup{%
+    pdftitle={Kunjika : key for open source question answer application},
+    pdfauthor={Shashi Kant},
+    pdfsubject={kunjika, open source question answer application}
+    pdfkeywords={kunjika, shashi kant, open source, application, question,answer,jinja,flask,couchbase,},
+    bookmarksnumbered,
+    pdfstartview={FitH},
+    urlcolor=webblue,
+    linkcolor=webgreen,
+}%
 
 % Title Page
 \title{Kunjika : key for open source question answer application}
@@ -10,13 +21,11 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-Asking question and providing solution are integral and essential parts of learning process and to help in this process, there exist applications like stackoverflow, question2answer, OSQA, shapado and now comes Kunjika. Such applications can extend help in educational institutions, company or organization. Sometimes such web apps are public and hosted on public domain while sometimes it is required to keep it private to the members of organization or institution depending on the nature of discussion.
+Asking questions and providing solutions are integral and essential parts of learning process and to help in this, there exist applications like stackoverflow, AnswerHub, Discourse, Question2Answer, OSQA, Shapado etc. Such applications can extend help in educational institutions, company or organization. Sometimes such web apps are public and hosted on public domain while sometimes it is required to keep it private to the members of organization or institution depending on the nature of discussion.
 
-Reason for developing Kunjika is lack of good quality free \& open source QA applications. Most applications charge monthly charges depending on the uses and don't provide source code. Good open source application like OSQA is now no longer being developed and rest of open source applications lacks features.
-\\
-We have kept the future demands in mind while designing the structure and selecting the technologies to be used. We are developing the application using python with the help of a micro framework called Fask. It is small, simple and modular which can gain more power by adding plug-ins like jinja (templating engine), Flask-login, Flask-Cache etc  We are using Couchbase which is a non-relational and JSON document based database. It is high performance, easily scalable and has build-in object level cache which makes it suitable for Kunjika. We have taken care of all kind of security measures like XSS by using XFCR with WTForms. It is not just solid back-end we aim for, but we have also worked for nice looking, user friendly, fluid and responsive design and we are using Twitter Bootstrap, font-awesome, jquery to achieve this.
-\\
-bout 75\% of back-end code has been written. Addition of few features, few tweaks and polishing of code is remaining. Hope, very soon we will be able to give the open source community a gift which is best in its category.
+Reason for developing Kunjika is lack of good quality free \& open source QA applications. Most applications take monthly charges depending on the uses and don't provide source code. Good open source application like OSQA is now no longer being developed and rest of open source applications lacks features which were needed by us and many times they were in PHP which is an unknown territory for us.
+
+We have kept the future demands in mind while designing the structure and selecting the technologies to be used. We are  using Python and Fask.  We are using Couchbase which is a non-relational and JSON document based database. It is high performance, easily scalable and has build-in object level cache which makes it suitable for Kunjika. It also provides Memcached functionality.
 \end{abstract}
 
 \end{document}
